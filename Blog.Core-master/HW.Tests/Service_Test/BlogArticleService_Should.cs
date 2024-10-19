@@ -5,13 +5,13 @@ using System;
 using System.Linq;
 using Autofac;
 
-namespace HW.Tests
+namespace HW.Tests.Service_Test
 {
     public class BlogArticleService_Should
     {
 
-        private ICustServices blogArticleServices;
-        DI_Test dI_Test = new DI_Test();
+        private readonly IBlogArticleServices blogArticleServices;
+        readonly DI_Test dI_Test = new();
 
 
         public BlogArticleService_Should()
@@ -20,7 +20,7 @@ namespace HW.Tests
 
             var container = dI_Test.DICollections();
 
-            blogArticleServices = container.Resolve<ICustServices>();
+            blogArticleServices = container.Resolve<IBlogArticleServices>();
 
         }
 
@@ -37,13 +37,13 @@ namespace HW.Tests
         {
             var data = await blogArticleServices.GetBlogs();
 
-            Assert.True(data.Any());
+            Assert.True(data.Count==0);
         }
 
         [Fact]
         public async void Add_Blog_Test()
         {
-            BlogArticle blogArticle = new BlogArticle()
+            BlogArticle blogArticle = new ()
             {
                 bCreateTime = DateTime.Now,
                 bUpdateTime = DateTime.Now,

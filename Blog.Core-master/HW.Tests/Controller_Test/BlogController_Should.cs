@@ -6,20 +6,19 @@ using HW.Model.Models;
 using HW.Model.ViewModels;
 using Microsoft.Extensions.Logging;
 using Moq;
-using System;
-using System.Collections.Generic;
 using Xunit;
 
-namespace HW.Tests
+namespace HW.Tests.Controller_Test
+
 {
     public class BlogController_Should
     {
-        Mock<ICustServices> mockBlogSev = new Mock<ICustServices>();
-        Mock<ILogger<BlogController>> mockLogger = new Mock<ILogger<BlogController>>();
-        BlogController blogController;
+        readonly Mock<ICustServices> mockBlogSev;
+        readonly Mock<ILogger<BlogController>> mockLogger;
+        readonly BlogController blogController;
 
-        private ICustServices blogArticleServices;
-        DI_Test dI_Test = new DI_Test();
+        private readonly IBlogArticleServices blogArticleServices;
+        readonly DI_Test dI_Test;
 
 
 
@@ -28,15 +27,17 @@ namespace HW.Tests
             mockBlogSev.Setup(r => r.Query());
 
             var container = dI_Test.DICollections();
-            blogArticleServices = container.Resolve<ICustServices>();
-            blogController = new BlogController(mockLogger.Object);
-            blogController._blogArticleServices = blogArticleServices;
+            blogArticleServices = container.Resolve<IBlogArticleServices>();
+            blogController = new BlogController(mockLogger.Object)
+            {
+                _blogArticleServices = blogArticleServices
+            };
         }
 
         [Fact]
         public void TestEntity()
         {
-            BlogArticle blogArticle = new BlogArticle();
+            BlogArticle blogArticle = new();
 
             Assert.True(blogArticle.bID >= 0);
         }
@@ -98,7 +99,7 @@ namespace HW.Tests
         [Fact]
         public async void PostTest()
         {
-            BlogArticle blogArticle = new BlogArticle()
+            BlogArticle blogArticle = new()
             {
                 bCreateTime = DateTime.Now,
                 bUpdateTime = DateTime.Now,
@@ -118,7 +119,7 @@ namespace HW.Tests
         [Fact]
         public async void Post_Insert_For_MVP_Test()
         {
-            BlogArticle blogArticle = new BlogArticle()
+            BlogArticle blogArticle = new()
             {
                 bCreateTime = DateTime.Now,
                 bUpdateTime = DateTime.Now,
@@ -138,7 +139,7 @@ namespace HW.Tests
         [Fact]
         public async void Put_Test()
         {
-            BlogArticle blogArticle = new BlogArticle()
+            BlogArticle blogArticle = new()
             {
                 bID = 1,
                 bCreateTime = DateTime.Now,
