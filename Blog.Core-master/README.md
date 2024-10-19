@@ -1,14 +1,14 @@
 <img align="right" height="50px" src="http://apk.neters.club/logocore.png">
 
-# Blog.Core
+# HW
 
 [English](README-en.md) | 简体中文
 
-[![sdk](https://img.shields.io/badge/sdk-6.0.1-d.svg)](#)  [![Build status](https://github.com/anjoy8/blog.core/workflows/.NET%20Core/badge.svg)](https://github.com/anjoy8/Blog.Core/actions)  [![Build Status](https://dev.azure.com/laozhangisphi/anjoy8/_apis/build/status/anjoy8.Blog.Core?branchName=master)](https://dev.azure.com/laozhangisphi/anjoy8/_build?definitionId=1)  [![codecov](https://codecov.io/gh/anjoy8/Blog.Core/branch/master/graph/badge.svg)](https://codecov.io/gh/anjoy8/Blog.Core)  [![License MIT](https://img.shields.io/badge/license-Apache-blue.svg?style=flat-square)](https://github.com/anjoy8/Blog.Core/blob/master/LICENSE) [![star this repo](http://githubbadges.com/star.svg?user=anjoy8&repo=blog.core&style=flat)](https://github.com/boennemann/badges)  [![fork this repo](http://githubbadges.com/fork.svg?user=anjoy8&repo=blog.core&style=flat)](https://github.com/boennemann/badges/fork)  [![博客园](https://img.shields.io/badge/博客园-老张的哲学-brightgreen.svg)](https://www.cnblogs.com/laozhang-is-phi/)
+[![sdk](https://img.shields.io/badge/sdk-6.0.1-d.svg)](#)  [![Build status](https://github.com/anjoy8/hw/workflows/.NET%20Core/badge.svg)](https://github.com/anjoy8/HW/actions)  [![Build Status](https://dev.azure.com/laozhangisphi/anjoy8/_apis/build/status/anjoy8.HW?branchName=master)](https://dev.azure.com/laozhangisphi/anjoy8/_build?definitionId=1)  [![codecov](https://codecov.io/gh/anjoy8/HW/branch/master/graph/badge.svg)](https://codecov.io/gh/anjoy8/HW)  [![License MIT](https://img.shields.io/badge/license-Apache-blue.svg?style=flat-square)](https://github.com/anjoy8/HW/blob/master/LICENSE) [![star this repo](http://githubbadges.com/star.svg?user=anjoy8&repo=hw&style=flat)](https://github.com/boennemann/badges)  [![fork this repo](http://githubbadges.com/fork.svg?user=anjoy8&repo=hw&style=flat)](https://github.com/boennemann/badges/fork)  [![博客园](https://img.shields.io/badge/博客园-老张的哲学-brightgreen.svg)](https://www.cnblogs.com/laozhang-is-phi/)
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=anjoy8/blog.core&type=Date)](https://star-history.com/#anjoy8/blog.core&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=anjoy8/hw&type=Date)](https://star-history.com/#anjoy8/hw&Date)
 
 
 &nbsp;
@@ -24,14 +24,14 @@
 </div>
 
 -------------------------------
-Blog.Core 开箱即用的企业级前后端分离【 .NET Core6.0 Api + Vue 2.x + RBAC】权限框架。  
+HW 开箱即用的企业级前后端分离【 .NET Core6.0 Api + Vue 2.x + RBAC】权限框架。  
 其他版本看具体分支吧🎉  
 官网：http://apk.neters.club/.doc/    
 
   
 ---------------------
 
-**已被近100家公司所使用(🐱‍🚀)：[点击查看列表](https://github.com/anjoy8/Blog.Core/issues/75)**   欢迎盖楼，留下公司真实名字的，可得定制化指导服务。  
+**已被近100家公司所使用(🐱‍🚀)：[点击查看列表](https://github.com/anjoy8/HW/issues/75)**   欢迎盖楼，留下公司真实名字的，可得定制化指导服务。  
 同时如果企业有付费咨询，欢迎联系老张（QQ：3143422472）。
   
 
@@ -46,7 +46,7 @@ Blog.Core 开箱即用的企业级前后端分离【 .NET Core6.0 Api + Vue 2.x 
 如果搭配负载，效果更好。
 
 1、A~CoderDong:
-应用场景：使用Blog.Core为基础骨架开发，搭建Client监控类守护进程项目，To C 客户群，
+应用场景：使用HW为基础骨架开发，搭建Client监控类守护进程项目，To C 客户群，
 并发情况：目前压测并发5k正常8秒处理完，并发10k可15秒处理完毕，异常不会丢失。
 生产配置：一台服务器（Linux环境 + 至强8核的16G内存 + mysql数据库 + 3台Nginx负载）
 
@@ -58,7 +58,7 @@ Blog.Core 开箱即用的企业级前后端分离【 .NET Core6.0 Api + Vue 2.x 
 
 ## 给个星星! ⭐️
 如果你喜欢这个项目或者它帮助你, 请给 Star~   
-如果你的项目中借鉴了本项目，请稍微说明下[https://github.com/anjoy8/Blog.Core/issues/75](https://github.com/anjoy8/Blog.Core/issues/75)，开源不易✨。  
+如果你的项目中借鉴了本项目，请稍微说明下[https://github.com/anjoy8/HW/issues/75](https://github.com/anjoy8/HW/issues/75)，开源不易✨。  
 
 
 
@@ -94,7 +94,7 @@ Blog.Core 开箱即用的企业级前后端分离【 .NET Core6.0 Api + Vue 2.x 
 - [x] 设计并支持按钮级别的RBAC权限控制，同时支持一键同步接口和菜单 🎶；
 - [x] 支持 T4 代码模板，自动生成每层代码；
 - [x] 或使用 DbFirst 一键创建自己项目的四层文件（支持多库）；
-- [x] 封装`Blog.Core.Webapi.Template`项目模板，一键重建自己的项目 ✨；
+- [x] 封装`HW.Webapi.Template`项目模板，一键重建自己的项目 ✨；
 - [x] 搭配多个前端案例供参考和借鉴：Blog.Vue、Blog.Admin、Nuxt.tbug、Blog.Mvp.Blazor ✨；
 - [x] 统一集成 IdentityServer4 认证 ✨;
 - [x] 统一实现多租户;
@@ -140,7 +140,7 @@ Blog.Core 开箱即用的企业级前后端分离【 .NET Core6.0 Api + Vue 2.x 
 
 ### 核心业务模块
 #### 框架采用泛型仓储模式，以下几层为核心层，不可删除    
-`Blog.Core.Api`、`Blog.Core.Common`、`Blog.Core.IServices`、`Blog.Core.Model`、`Blog.Core.Repository`、`Blog.Core.Services`、`Blog.Core.Tasks`、`Blog.Core.Serilog`    
+`HW.Api`、`HW.Common`、`HW.IServices`、`HW.Model`、`HW.Repository`、`HW.Services`、`HW.Tasks`、`HW.Serilog`    
 其他代码分层是支撑层，如果自己业务涉及不到，可以删除。
 
 #### API接口层主要是基于RBAC的基于按钮级别的角色授权逻辑，以下几个Controller，不可删除    
@@ -162,15 +162,15 @@ Blog.Core 开箱即用的企业级前后端分离【 .NET Core6.0 Api + Vue 2.x 
 
 ## 贡献者们 
 
-Thanks goes to these wonderful people ([✨](https://github.com/anjoy8/Blog.Core/graphs/contributors)):（排名暂时按提交顺序）  
+Thanks goes to these wonderful people ([✨](https://github.com/anjoy8/HW/graphs/contributors)):（排名暂时按提交顺序）  
   
     
-<a href="https://github.com/anjoy8/blog.core/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=anjoy8/blog.core" />
+<a href="https://github.com/anjoy8/hw/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=anjoy8/hw" />
 </a>
 <!-- prettier-ignore-end -->
 
-This project follows the [all-contributors](https://github.com/anjoy8/Blog.Core/graphs/contributors) specification.
+This project follows the [all-contributors](https://github.com/anjoy8/HW/graphs/contributors) specification.
 Contributions of any kind are welcome!
 
 &nbsp;
@@ -230,7 +230,7 @@ Contributions of any kind are welcome!
 
 | Package | NuGet Stable |  Downloads |
 | ------- | -------- | ------- |
-| [Blog.Core.Webapi.Template](https://www.nuget.org/packages/Blog.Core.Webapi.Template/) | [![Blog.Core.Webapi.Template](https://img.shields.io/nuget/v/Blog.Core.Webapi.Template.svg)](https://www.nuget.org/packages/Blog.Core.Webapi.Template/)  | [![Blog.Core.Webapi.Template](https://img.shields.io/nuget/dt/Blog.Core.Webapi.Template.svg)](https://www.nuget.org/packages/Blog.Core.Webapi.Template/) |
+| [HW.Webapi.Template](https://www.nuget.org/packages/HW.Webapi.Template/) | [![HW.Webapi.Template](https://img.shields.io/nuget/v/HW.Webapi.Template.svg)](https://www.nuget.org/packages/HW.Webapi.Template/)  | [![HW.Webapi.Template](https://img.shields.io/nuget/dt/HW.Webapi.Template.svg)](https://www.nuget.org/packages/HW.Webapi.Template/) |
 
 
 关于如何使用，点击这里：https://www.cnblogs.com/laozhang-is-phi/p/10205495.html
@@ -244,7 +244,7 @@ Contributions of any kind are welcome!
 |单层项目|简单仓储框架|仓储+服务+接口|DDD框架|
 |-|-|-|-|
 |CURD+Seed|CURD+Seed+DI|CURD+Seed+DI+AOP等|DDD+EFCore+DI+EventBus等|
-|[NetCore-Sugar-Demo](https://github.com/anjoy8/NetCore-Sugar-Demo)|[Blog.SplRepository.Demo](https://github.com/anjoy8/Blog.SplRepository.Demo)|[Blog.Core](https://github.com/anjoy8/Blog.Core)|[ChristDDD](https://github.com/anjoy8/ChristDDD)|
+|[NetCore-Sugar-Demo](https://github.com/anjoy8/NetCore-Sugar-Demo)|[Blog.SplRepository.Demo](https://github.com/anjoy8/Blog.SplRepository.Demo)|[HW](https://github.com/anjoy8/HW)|[ChristDDD](https://github.com/anjoy8/ChristDDD)|
 | -|[Blog-EFCore-Sqlite](https://github.com/anjoy8/Blog-EFCore-Sqlite)|- | -|
 
 

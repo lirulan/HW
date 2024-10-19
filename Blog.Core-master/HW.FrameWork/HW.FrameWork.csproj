@@ -1,0 +1,55 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\build\common.targets" />
+
+  <ItemGroup>
+    <None Update="HW.FrameWork.Entity\HW.FrameWork.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>HW.FrameWork.cs</LastGenOutput>
+    </None>
+    <None Update="HW.FrameWork.IRepository\HW.FrameWork.IRepository.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>HW.FrameWork.IRepository.cs</LastGenOutput>
+    </None>
+    <None Update="HW.FrameWork.IServices\HW.FrameWork.IServices.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>HW.FrameWork.IServices.cs</LastGenOutput>
+    </None>
+    <None Update="HW.FrameWork.Repository\HW.FrameWork.Repository.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>HW.FrameWork.Repository.cs</LastGenOutput>
+    </None>
+    <None Update="HW.FrameWork.Services\HW.FrameWork.Services.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>HW.FrameWork.Services.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="HW.FrameWork.IRepository\HW.FrameWork.IRepository.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>HW.FrameWork.IRepository.tt</DependentUpon>
+    </Compile>
+    <Compile Update="HW.FrameWork.IServices\HW.FrameWork.IServices.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>HW.FrameWork.IServices.tt</DependentUpon>
+    </Compile>
+    <Compile Update="HW.FrameWork.Repository\HW.FrameWork.Repository.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>HW.FrameWork.Repository.tt</DependentUpon>
+    </Compile>
+    <Compile Update="HW.FrameWork.Services\HW.FrameWork.Services.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>HW.FrameWork.Services.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+</Project>
