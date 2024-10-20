@@ -67,7 +67,8 @@ public class LogBatchingSink : IBatchedLogEventSink
             log.DateTime = logEvent.Timestamp.DateTime;
             logs.Add(log);
         }
-
+        var a = db.AsTenant().InsertableWithAttr(logs);
+        var b = db.AsTenant().InsertableWithAttr(logs).SplitTable();
         await db.AsTenant().InsertableWithAttr(logs).SplitTable().ExecuteReturnSnowflakeIdAsync();
     }
 
