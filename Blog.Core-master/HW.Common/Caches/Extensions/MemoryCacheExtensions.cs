@@ -36,7 +36,7 @@ public static class MemoryCacheExtensions
         ilGen.Emit(OpCodes.Ldarg_0);
         ilGen.Emit(OpCodes.Ldfld, field);
         ilGen.Emit(OpCodes.Ret);
-        return (Func<TParam, TReturn>)method.CreateDelegate(typeof(Func<TParam, TReturn>));
+        return (Func<TParam, TReturn>)method.CreateDelegate(typeof(Func<TParam, TReturn>)); 
     }
 
     #endregion
